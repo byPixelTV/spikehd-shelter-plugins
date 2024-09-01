@@ -128,7 +128,7 @@ export const onLoad = async () => {
 
   const connected = await retry(
     async (curTry) => {
-      ws = new WebSocket('ws://127.0.0.1:1337')
+      ws = new WebSocket('ws://127.0.0.1:6463')
       ws.onmessage = handleMessage
       ws.onerror = (e) => { throw e }
 
